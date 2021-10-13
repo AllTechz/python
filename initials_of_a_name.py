@@ -13,3 +13,8 @@ for i in bname:
         break
     print(i[0].upper()+".",end="")
 print(lname+"\n")
+
+##This is the second method with more compact code
+raw_name = input("\nEnter Full Name : ").strip().split(' ')
+lname = raw_name[int(int(len(raw_name)) - 1)]
+[print(i[0].upper()+".",end="") if i != lname else print(lname+"\n") for i in raw_name]
