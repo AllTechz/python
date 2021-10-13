@@ -1,5 +1,5 @@
-Raw_name = input("\nEnter Full Name : ") 
-name = Raw_name.strip()
+raw_name = input("\nEnter Full Name : ") 
+name = raw_name.strip()
 bname  = name.split(' ')
 lenofstr = len(bname)
 fname = bname[0]
